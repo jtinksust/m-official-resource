@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1xbet 使用指引 · 快速认识平台</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f2f4f6;
+            color: #1f2a3a;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* hero 区 */
+        .hero {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 48px 36px;
+            margin-bottom: 32px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.04);
+            border: 1px solid #e8ebee;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            color: #162b3a;
+            margin-bottom: 12px;
+        }
+        .hero .sub {
+            font-size: 1.1rem;
+            color: #4a5a6a;
+            max-width: 600px;
+            margin: 0 auto 24px;
+        }
+        .hero .tagline {
+            display: inline-block;
+            background: #eef2f5;
+            padding: 8px 22px;
+            border-radius: 40px;
+            font-size: 0.95rem;
+            color: #1d3b4e;
+            border: 1px solid #dce1e6;
+        }
+
+        /* 卡片通用 */
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 28px 30px;
+            margin-bottom: 24px;
+            border: 1px solid #e6eaef;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+            transition: box-shadow 0.2s;
+        }
+        .card:hover {
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #1a3040;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eef1f5;
+        }
+        .card p {
+            margin-bottom: 12px;
+            color: #2e4050;
+        }
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 优势区 flex */
+        .advantages-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin: 20px 0 8px;
+        }
+        .advantage-item {
+            flex: 1 1 180px;
+            background: #f7f9fb;
+            border-radius: 14px;
+            padding: 18px 14px;
+            border: 1px solid #e2e7ed;
+            text-align: center;
+        }
+        .advantage-item .num {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #2a5b77;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .advantage-item .desc {
+            font-size: 0.95rem;
+            color: #2f4455;
+        }
+
+        /* FAQ 摘要 */
+        .faq-item {
+            padding: 14px 0;
+            border-bottom: 1px solid #eef2f6;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-q {
+            font-weight: 500;
+            color: #1f3749;
+            margin-bottom: 4px;
+        }
+        .faq-a {
+            color: #3d5668;
+            font-size: 0.95rem;
+        }
+
+        /* 底部 */
+        .footer {
+            margin-top: 28px;
+            padding: 20px 0 10px;
+            border-top: 1px solid #dce2e8;
+            font-size: 0.9rem;
+            color: #526779;
+            text-align: center;
+        }
+        .footer a {
+            color: #1d4e6b;
+            text-decoration: none;
+            border-bottom: 1px dotted #bcc9d4;
+        }
+        .footer a:hover {
+            border-bottom: 1px solid #1d4e6b;
+        }
+        .footer-inline {
+            margin: 0 6px;
+        }
+
+        /* 响应式 */
+        @media (max-width: 680px) {
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            .hero {
+                padding: 30px 20px;
+            }
+            .card {
+                padding: 20px 16px;
+            }
+            .advantages-grid {
+                flex-direction: column;
+            }
+            .advantage-item {
+                flex: 1 1 auto;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                padding: 12px;
+            }
+            .hero .tagline {
+                font-size: 0.85rem;
+                padding: 6px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- hero 区 -->
+    <div class="hero">
+        <h1>想快速了解这个网站？</h1>
+        <p class="sub">这里是一份安静的介绍——关于 <a href="https://m-official-1xbet.com" style="color:#1a5a7a; text-decoration:none; border-bottom:1px solid #b8cbda;">1xbet</a> 是什么、做什么，以及你可能会关心的几个小问题。</p>
+        <span class="tagline">简明 · 中立 · 无干扰</span>
+    </div>
+
+    <!-- 说明区：网站用途 -->
+    <div class="card">
+        <h2>从用途开始认识</h2>
+        <p>当你在浏览器里输入 <strong>m-official-1xbet.com</strong> 时，你进入的是一个提供综合在线服务的平台。很多人第一次接触它，是为了浏览体育相关资讯、娱乐内容或线上互动体验。</p>
+        <p>平台本身并不神秘：它整合了多种功能模块，界面以信息展示为主，适合想快速查找内容或参与互动的用户。无论你是为了休闲还是获取信息，入口都简洁直接。</p>
+    </div>
+
+    <!-- 优势区 -->
+    <div class="card">
+        <h2>几个容易被注意到的特点</h2>
+        <div class="advantages-grid">
+            <div class="advantage-item">
+                <span class="num">01</span>
+                <span class="desc">界面直观，分类清晰</span>
+            </div>
+            <div class="advantage-item">
+                <span class="num">02</span>
+                <span class="desc">移动端适配良好</span>
+            </div>
+            <div class="advantage-item">
+                <span class="num">03</span>
+                <span class="desc">实时信息更新</span>
+            </div>
+            <div class="advantage-item">
+                <span class="num">04</span>
+                <span class="desc">多语言可选</span>
+            </div>
+        </div>
+        <p style="margin-top: 18px; font-size: 0.95rem; color: #3c5668;">这些细节让新用户能更快找到自己需要的部分，减少摸索时间。</p>
+    </div>
+
+    <!-- 说明区：场景与提示 -->
+    <div class="card">
+        <h2>你可能会在哪些场景用到</h2>
+        <p>如果你平时关注体育动态、喜欢浏览各类赛事信息，或者想找一个内容聚合的线上空间，<a href="https://m-official-1xbet.com" style="color:#1a5a7a; text-decoration:none; border-bottom:1px solid #b8cbda;">1xbet</a> 可以成为你书签栏里的一个选项。它不追求花哨，更偏向实用。</p>
+        <p>小提示：首次访问时，可以花几分钟熟悉一下页面分区。每个模块的用途都比较明确，不需要额外学习成本。另外，留意网站的语言切换按钮——如果你更习惯另一种语言，可以一键调整。</p>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="card">
+        <h2>常见疑问 · 简短回答</h2>
+        <div class="faq-item">
+            <div class="faq-q">▸ 这个网站需要注册才能浏览吗？</div>
+            <div class="faq-a">大部分内容可以直接查看，部分互动功能可能需要创建账号，具体以页面提示为准。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">▸ 是否支持手机浏览器？</div>
+            <div class="faq-a">是的，移动端访问会自动适配，体验与桌面端一致流畅。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">▸ 如何确认我访问的是官方页面？</div>
+            <div class="faq-a">直接使用本页提供的链接 <a href="https://m-official-1xbet.com" style="color:#1a5a7a; text-decoration:none; border-bottom:1px solid #b8cbda;">1xbet</a>，或手动输入域名即可。注意核对网址拼写。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">▸ 网站有客服或帮助文档吗？</div>
+            <div class="faq-a">通常页面底部会提供帮助入口或联系方式，你也可以在常见问题区域找到答案。</div>
+        </div>
+    </div>
+
+    <!-- 底部链接 -->
+    <div class="footer">
+        <span>本页仅为介绍用途，官方网址：</span>
+        <a href="https://m-official-1xbet.com">1xbet</a>
+        <span class="footer-inline">·</span>
+        <span style="color:#6f889c;">内容仅供参考，请以实际页面为准</span>
+    </div>
+
+</div>
+</body>
+</html>
