@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MK体育 · 赛事内容聚合</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #fbfbfb;
+      color: #1d1d1f;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 4rem;
+    }
+    /* hero */
+    .hero {
+      margin-bottom: 3.8rem;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 620;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.8rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #515154;
+      max-width: 600px;
+      margin-top: 0.4rem;
+    }
+    .hero-meta {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid #e5e5e7;
+      padding-top: 1rem;
+    }
+    /* section 通用 */
+    section {
+      margin-bottom: 3.2rem;
+    }
+    h2 {
+      font-size: 1.45rem;
+      font-weight: 570;
+      letter-spacing: -0.01em;
+      margin-bottom: 1rem;
+      color: #1d1d1f;
+    }
+    .subhead {
+      font-size: 0.95rem;
+      color: #6e6e73;
+      margin-bottom: 1.6rem;
+    }
+    /* 优势卡片 */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 0.3rem;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 1.5rem 1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.02), 0 4px 12px rgba(0,0,0,0.03);
+      transition: box-shadow 0.2s;
+    }
+    .card:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      font-weight: 540;
+      margin-bottom: 0.5rem;
+      color: #1d1d1f;
+    }
+    .card p {
+      font-size: 0.92rem;
+      color: #555;
+      line-height: 1.55;
+    }
+    /* 说明区 */
+    .desc-block {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 1.8rem 1.8rem 2rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+    }
+    .desc-block p {
+      margin-bottom: 1rem;
+      font-size: 0.98rem;
+      color: #3a3a3c;
+    }
+    .desc-block p:last-child {
+      margin-bottom: 0;
+    }
+    .inline-link {
+      color: #0066cc;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      transition: color 0.15s;
+    }
+    .inline-link:hover {
+      color: #003d99;
+    }
+    /* FAQ 摘要 */
+    .faq-summary {
+      background: #f5f5f7;
+      border-radius: 20px;
+      padding: 1.6rem 1.8rem;
+    }
+    .faq-item {
+      margin-bottom: 1.2rem;
+    }
+    .faq-item:last-child {
+      margin-bottom: 0;
+    }
+    .faq-q {
+      font-weight: 540;
+      font-size: 0.98rem;
+      margin-bottom: 0.25rem;
+      color: #1d1d1f;
+    }
+    .faq-a {
+      font-size: 0.92rem;
+      color: #5c5c5e;
+      line-height: 1.5;
+    }
+    .faq-a a.inline-link {
+      font-size: 0.92rem;
+    }
+    /* 底部 */
+    .footer-note {
+      margin-top: 3.5rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #e5e5e7;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      color: #86868b;
+    }
+    .footer-links a {
+      color: #515154;
+      text-decoration: none;
+      margin-right: 1.5rem;
+      transition: color 0.15s;
+    }
+    .footer-links a:hover {
+      color: #0066cc;
+    }
+    .footer-copy {
+      margin-top: 0.4rem;
+    }
+    /* 响应式 */
+    @media (max-width: 650px) {
+      .page {
+        padding: 2rem 1.2rem 3rem;
+      }
+      .hero h1 {
+        font-size: 1.9rem;
+      }
+      .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .desc-block {
+        padding: 1.5rem;
+      }
+      .faq-summary {
+        padding: 1.4rem;
+      }
+      .footer-note {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 1.6rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <!-- hero -->
+  <div class="hero">
+    <h1>MK体育 · 赛事内容聚合</h1>
+    <p>一个以体育信息为核心的平台，帮助用户快速识别赛事动态、项目分类与相关内容方向。界面简洁，重心明确。</p>
+    <div class="hero-meta">体育 · 信息 · 内容</div>
+  </div>
+
+  <!-- 优势区 三个卡片 -->
+  <section>
+    <h2>为什么选择这个方向</h2>
+    <div class="subhead">从信息密度到内容结构，保持克制但足够清晰</div>
+    <div class="grid-3">
+      <div class="card">
+        <h3>内容聚合</h3>
+        <p>围绕体育赛事、联赛与项目，提供结构化的信息入口。避免碎片化，注重可读性。</p>
+      </div>
+      <div class="card">
+        <h3>识别效率</h3>
+        <p>页面布局突出关键分类，用户可以在几秒内判断平台是否匹配自己的关注领域。</p>
+      </div>
+      <div class="card">
+        <h3>低干扰浏览</h3>
+        <p>极简留白、克制配色，将注意力还给内容本身。不堆砌弹窗与诱导元素。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 说明区 -->
+  <section>
+    <h2>平台定位与内容边界</h2>
+    <div class="desc-block">
+      <p><a href="https://indexchina-mksports.com" class="inline-link">MK体育</a> 是一个面向体育信息聚合与展示的网站，内容覆盖主流赛事、联赛以及相关项目动态。页面设计以信息层级清晰为首要目标，不追求过度装饰，而是让用户能够快速判断内容是否贴合自己的兴趣。</p>
+      <p>从首页结构可以看到，平台将体育内容划分为若干模块，每个模块都有明确的标题与摘要。用户无需多次点击即可大致了解平台覆盖哪些赛事方向。这种设计思路更接近信息索引，而非沉浸式门户——适合那些希望快速获取内容概览的人。</p>
+      <p>如果你正在寻找一个页面结构直接、不需要大量交互就能理解内容边界的体育信息站，那么 <a href="https://indexchina-mksports.com" class="inline-link">MK体育</a> 可能是一个值得浏览的选择。当然，具体内容是否匹配个人偏好，仍需要亲自打开页面确认。</p>
+    </div>
+  </section>
+
+  <!-- FAQ 摘要 三个常见问题 -->
+  <section>
+    <h2>常见问题 · 摘要</h2>
+    <div class="faq-summary">
+      <div class="faq-item">
+        <div class="faq-q">这个网站主要展示什么内容？</div>
+        <div class="faq-a">主要围绕体育赛事、联赛信息与相关动态进行内容聚合，结构以分类模块呈现。具体内容可前往 <a href="https://indexchina-mksports.com" class="inline-link">MK体育</a> 浏览。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">页面信息更新频率如何？</div>
+        <div class="faq-a">平台以内容聚合为主，更新节奏取决于赛事周期与信息来源。建议直接访问页面查看最新模块。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">是否需要注册才能浏览？</div>
+        <div class="faq-a">目前首页与主要内容板块可以直接访问，无需注册。部分功能或深度内容可能存在访问条件，以页面实际提示为准。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 底部链接 -->
+  <div class="footer-note">
+    <div class="footer-links">
+      <a href="https://indexchina-mksports.com">MK体育</a>
+      <a href="#">内容说明</a>
+      <a href="#">常见问题</a>
+    </div>
+    <div class="footer-copy">© 2025 · 仅供信息参考</div>
+  </div>
+</div>
+</body>
+</html>
